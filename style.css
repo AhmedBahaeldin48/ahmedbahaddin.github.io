@@ -1,0 +1,251 @@
+
+  /*--كود تغيير شكل الخط تابع لي css--*/
+  .archivo-black-regular {
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #605e60 !important;
+  
+}
+
+  /* ===== إعدادات عامة ===== */
+body {
+}
+/* ===== الهيدر ===== */
+.header {
+  background: linear-gradient(135deg, #750505, #264653);
+  color: rgb(245, 243, 243);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+/*===شعار الموقع===*/
+.logo {
+  display: block;
+  align-items: center;
+  gap: 15px;
+}
+.logo-icon img {
+  max-width: 180px;
+  height: auto;
+  border-radius: 20px;
+}
+.logo-text p {
+  margin: 5px 0 0;
+  font-size: 25px;
+  color: #f9f5f5;
+  opacity: 0.9;
+  direction: rtl;
+  text-align: right;
+}
+/* القائمة */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+}
+nav a {
+  color: rgb(247, 245, 245);
+  text-decoration: none;
+  font-weight: bold;
+}
+/* ===== الأقسام ===== */
+.section {
+  padding: 60px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+.section h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #070808;
+}
+/* ===== من نحن ===== */
+.about {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.about img {
+  width: 200px;
+  border-radius: 15px; 
+}
+
+/* ===== الخدمات ===== */
+.cards {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.card {
+  background: rgb(232, 231, 231);
+  padding: 25px;
+  width: 260px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(182, 180, 180, 0.922);
+}
+.card i {
+  font-size: 40px;
+  color: #6d9d2a;
+  margin-bottom: 15px;
+}
+/* ===== الأعمال ===== */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+  justify-items: center; /*=== يجعل الصور والعناصر تتوسط داخل العمود===*/
+}
+
+.gallery img {       
+  width: 100%;       /*===تجعل الورة تاجد كل مساتحة العمود===*/    
+  height: 159px;     /*===طول ثابت===*/
+  object-fit: cover; /*===يقص الطول الزائد ويجعل  شكل الصورة متناسق===*/ 
+  border-radius: 10px;
+}
+/* ===== الفيديو ===== */
+video {
+  width: 40%;
+  max-width: 500px;
+  display: block;
+  margin: auto;
+  border-radius: 15px;
+}
+/* ===== التواصل ===== */
+.contact {
+  background: #575656;
+  color: white;
+  border-radius: 20px;
+}
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+/* أيقونات التواصل */
+.social a {
+  font-size: 30px;
+  padding: 5px  8px; 
+  border-radius: 70%;
+  color: rgb(249, 247, 247);
+}
+.whatsapp {
+  background: #25d366;
+}
+.telegram {
+  background: #0088cc;
+}
+.email {
+  background: #c71610;
+}
+/* ===== الفوتر ===== */
+footer {
+  background: #f4f4f5;
+  color: rgb(12, 12, 12);
+  text-align: center;
+  padding: 15px;
+}
+/*======كود جعل الموقع متجاوب مع جميع الأجهزة=====*/
+
+
+/*=====كود جعل الموقع متجاوب مع الهاتف=====*/
+
+@media (max-width: 575px) {
+  /* الهيدر */
+  .header {
+    flex-direction: column; /* العناصر تحت بعض */
+    text-align: center;
+  }
+  nav ul {
+    flex-direction: column; /* الأزرار تحت بعض */
+    gap: 10px;
+  }
+  /* الشعار */
+  .logo-icon img {
+    max-width: 120px; /* تصغير الشعار */
+  }
+  .logo-text p {
+    font-size: 18px; /* تصغير النص */
+    text-align: center;
+  }
+  /* الأقسام */
+  .section {
+    padding: 40px 10px;
+  }
+  /* الصور */
+  .gallery img {
+    width: 100%; /* الصورة تملى الشاشة */
+  }
+  /* الفيديو */
+  video {
+    width: 100%; /* الفيديو كامل العرض */
+  }
+  /* الكروت */
+  .card {
+    width: 100%; /* الكرت بعرض الشاشة */
+  }
+}
+/* =========================
+   2️⃣ التابلت
+   ========================= */
+@media (min-width: 576px) and (max-width: 991px) {
+  /* الهيدر */
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+  nav ul {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  /* الشعار */
+  .logo-icon img {
+    max-width: 150px;
+  }
+  .logo-text p {
+    font-size: 22px;
+    text-align: center;
+  }
+  /* الكروت */
+  .card {
+    width: 45%; /* كرتين في الصف */
+  }
+  /* الفيديو */
+  video {
+    width: 80%;
+  }
+  /* الصور */
+  .gallery img {
+    width: 100%;
+  }
+}
+/* =========================
+   3️⃣ اللابتوب والكمبيوتر
+   ========================= */
+@media (min-width: 992px) {
+  /* الهيدر */
+  .header {
+    flex-direction: row; /* جنب بعض */
+  }
+  nav ul {
+    flex-direction: row;
+  }
+  /* الكروت */
+  .card {
+    width: 260px; /* الحجم الأصلي */
+  }
+  /* الفيديو */
+  video {
+    width: 40%;
+  }
+  /* الصور */
+  .gallery img {
+    width: 100%;
+  }
+}
