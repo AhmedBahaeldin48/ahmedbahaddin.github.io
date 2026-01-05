@@ -1,187 +1,0 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-    <!-- ترميز يدعم اللغة العربية -->
-    <meta charset="UTF-8">
-
-    <!-- يجعل الموقع متجاوب مع الموبايل والكمبيوتر -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    
-<!--كود تغيير شكل الخط تابع لي html-->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=BBH+Bogle&family=BBH+Hegarty&family=Bebas+Neue&family=Sekuya&family=Tagesschrift&display=swap" rel="stylesheet">
-
-
-
-
-
-
-    <!-- عنوان الموقع -->
-    <title>CodeNest | كودنيست</title>
-<!----كود إستدعاء مكتبة الpootstrap----->
-<link
-href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- ربط ملف التنسيق -->
-    <link rel="stylesheet" href="style.css">
-
-    <!-- مكتبة الأيقونات -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-</head>
-<body>
-
-<!-- ================= الهيدر (اسم الموقع + القائمة) ================= -->
-<header class="header">
-
-    <!-- شعار واسم الموقع -->
-    <div class="logo">
-    <div class="logo-icon">
-<img src="images/logo.png"
-alt="CdeNest logo"/>
-    </div>
-
-
-
-        <div class="logo-text">
-    <p>نحوّل أفكارك إلى واقع رقمي💻✔</p>
-    
-        </div>
-    </div>
-
-    <!--bootstrap قائمة التنقل  و ضافة اذرار بواسطة -->
-    <nav>
-        <ul>
-            <li><a href="#about" class="btn btn-primary m-1 rounded-pill shadow-sm">من نحن</a></li>
-            <li><a href="#services"class="btn btn-success m-1 rounded-pill shadow-sm">خدماتنا</a></li>
-            <li><a href="#gallery" class="btn btn-info m-1 rounded-pill shadow-sm">أعمالنا</a></li>
-            <li><a href="#contact"class="btn btn-danger m-1 rounded-pill shadow-sm" >تواصل معنا</a></li>
-        </ul>
-    </nav>
-</header>
-
-<main>
-
-    <!-- =================  قسم من نحن بأستخدم bootstrap================= -->
-    
-        <!-- قسم من نحن -->
-<section id="about" class="section about">
-
-  <!-- خلفية خفيفة + حواف ناعمة + ظل + تنسيق مركزي -->
-  <div class="bg-light p-4 rounded shadow text-center">
-
-    <!-- عنوان القسم -->
-    <h2  mb-4>من نحن</h2>
-
-    <!-- صف من عمودين: صورة + نص -->
-    <div class="row align-items-center">
-
-      <!-- العمود الأول: الصورة -->
-      <div class="col-md-5 mb-3">
-        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d" 
-             alt="من نحن" 
-             class="img-fluid rounded">
-      </div>
-
-      <!-- العمود الثاني: النص التعريفي -->
-      <div class="col-md-7">
-        <p class="archivo-black-regular lead text-muted" style="line-height: 1.8;">
-          نحن فريق <strong>CodeNest</strong> متخصصون في تطوير مواقع الويب، برمجة بايثون، وحلول الأنظمة.
-          نعمل على تقديم حلول احترافية تساعدك على الدخول بقوة في العالم الرقمي.
-        </p>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-
-    <!-- ================= قسم الخدمات ================= -->
-    <section id="services" class="section">
-        <h2>خدماتنا</h2>
-
-        <div class="cards">
-
-            <!-- خدمة -->
-            <div class="card">
-                <i class="fa-solid fa-code"></i>
-                <h3>تطوير الويب</h3>
-                <p class="archivo-black-regular">تصميم مواقع حديثة ومتجاوبة مع جميع الأجهزة.</p>
-            </div>
-
-            <!-- خدمة -->
-            <div class="card">
-                <i class="fa-brands fa-python"></i>
-                <h3>برمجة بايثون</h3>
-                <p class="archivo-black-regular">أتمتة المهام وبناء سكربتات ذكية.</p>
-            </div>
-
-            <!-- خدمة -->
-            <div class="card">
-                <i class="fa-solid fa-table"></i>
-                <h3>حلول إكسل</h3>
-                <p class="archivo-black-regular">تقارير وتحليل بيانات باحتراف.</p>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- ================= قسم الأعمال ================= -->
-    <section id="gallery" class="section">
-        <h2>أعمالنا</h2>
-
-        <div class="gallery">
-            <img src="images/images2.jpeg" alt="">
-            <img src="images/images4.jpeg" alt="">
-            <img src="images/images.jpeg" alt="">
-            <img src="images/images5.jpeg" alt="">
-            <img src="images/pexels-gerzonpinatamx-9511923.jpg" alt="">
-        </div>
-    </section>
-
-    <!-- ================= قسم الفيديو ================= -->
-    <section class="section">
-        <h2>فيديو تعريفي</h2>
-
-        <!-- لاحقًا استبدل الفيديو بفيديو شغلك -->
-        <video controls>
-            <source src="videos/istockphoto-1356762790-640_adpp_is.mp4" type="video/mp4">
-            
-        </video>
-    </section>
- </main>
-    <!-- ================= قسم التواصل ================= -->
-    <footer id="contact" class="section contact">
-        
-        <h2>تواصل معنا</h2>
-        <div class="social">
-
-            <a class="whatsapp"
-            href="https://wa.me/249995588927"
-            target="-blank">
-        <i class="fa-brands fa-whatsapp">
-
-        </i>
-        </a>
-
-        <a class="telegram"
-        href="https://t.me/249112973186"
-        target="_blank">
-    <i class="fa-brands fa-telegram">
-
-    </i>
-    </a>
-
-    <a class="email"
-    href="mailto:ahmedbahaeldin48@gmail.com">
-<i class="fa-solid fa-envelope">
-    
-</i>
-</a>
-
-       
-    </footer>
-
-        </body>
