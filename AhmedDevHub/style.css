@@ -1,0 +1,42 @@
+body {
+                                         /*التحكم في حجم القائمة العلوية النفبار*/
+.navbar {
+padding-top: 5px;
+padding-bottom: 5px;  
+height: 150px;  
+}
+
+                                               /*شعار الموقع  */  
+.logo {
+max-height: 300px;
+width: auto;
+
+
+}
+
+                                             /*يجعل الشعار متجاوب مع الهاتف*/
+@media (max-width:576px){
+.logo {
+    max-height: 32px;
+}
+
+}
+
+                                            /*يجعل الشعار متجاوب مع الابتوب والتابلت*/
+@media (max-width:768px){
+.logo {
+    max-height: 38px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+}
+
