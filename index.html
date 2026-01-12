@@ -1,434 +1,0 @@
-<!DOCTYPE html>
-<!---لغة الموقع يجعل اللغة عربية ومن اليمين لليسار---->
-<html lang="ar" dir="rtl">
-  <head>
-    <!---يجعل الحروف العربية صحيحه--->
-    <meta charset="UTF-8" />
-    <!-- يجعل الموقع متجاوب مع جميع الأجهزة (موبايل / تابلت / لابتوب) -->
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- اسم الموقع -->
-    <title>Ahmed Dev Hub</title>
-    <!-- استدعاء Bootstrap 5 (CSS) -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <!-- ربط ملف التنسيق -->
-    <link rel="stylesheet"href="style.css">
-
-
-
-    <!-- مكتبة أيقونات Bootstrap (واتساب / تلجرام / بريد) -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
-      rel="stylesheet"
-    />
-  </head>
-  <!---لون خلفية الموقع--->
-  <body class="bg-light">
-    <!-- =========================
-     NAVBAR (القائمة العلوية)
-     ========================= -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
-      <div class="container">
-        <!-- اسم الموقع / شعار الموقع داخل النافبار -->
-        <a class="navbar-brand d-flex align-items-center" href="#">
-        <!---صورة شعار الموقع------>
-       <img src="images/logo.png" alt="Ahmed Dev Hub" class="logo img-fluid">
-
-        </a>
-        
-        <!-- زر القائمة في الشاشات الصغيرة (الهاتف) -->
-        <button
-          class="navbar-toggler"
-          data-bs-toggle="collapse"
-          data-bs-target="#menu"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- روابط القائمة -->
-        <div class="collapse navbar-collapse" id="menu">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="btn btn-primary m-1 rounded-pill shadow-sm" href="#about">عن الموقع</a>
-            </li>
-            <li class="nav-item">
-              <a class="btn btn-success m-1 rounded-pill shadow-sm" href="#levels">مستويات التعلم</a>
-            </li>
-            <li class="nav-item">
-              <a class="btn btn-info m-1 rounded-pill shadow-sm" href="#gallery">معرض الصور</a>
-            </li>
-            <li class="nav-item">
-              <a class="btn btn-warning m-1 rounded-pill shadow-sm" href="#video">فيديو تعليمي</a>
-            </li>
-            <li class="nav-item">
-              <a class="btn btn-danger m-1 rounded-pill shadow-sm" href="#contact">تواصل معنا</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  
-    <!-- مسافة لأن الـ navbar ثابت -->
-    <div style="margin-top: 80px"></div>
-    <!-- =========================
-     CAROUSEL (سلايدر تعريفي)
-     ========================= -->
-    <div id="mainCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
-      <!-- محتوى السلايدر -->
-      <div class="carousel-inner text-center bg-dark text-white py-5">
-        <!-- أول عنصر (لازم يكون active) -->
-        <div class="carousel-item active">
-          <h3>تعلم البرمجة من الصفر</h3>
-          <p>بأسلوب بسيط وعملي</p>
-        </div>
-        <div class="carousel-item">
-          <h3>Bootstrap باحتراف</h3>
-          <p>تصميم متجاوب لكل الأجهزة</p>
-        </div>
-        <div class="carousel-item">
-          <h3>جاهزية لسوق العمل</h3>
-          <p>مشاريع حقيقية وتطبيق عملي</p>
-        </div>
-      </div>
-      <!-- أزرار التنقل -->
-      <button
-        class="carousel-control-prev"
-        data-bs-target="#mainCarousel"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev-icon"></span>
-      </button>
-      <button
-        class="carousel-control-next"
-        data-bs-target="#mainCarousel"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon"></span>
-      </button>
-    </div>
-    <!-- =========================
-     SECTION: عن الموقع
-     ========================= -->
-    <section id="about" class="py-5 bg-white">
-      <div class="container text-center">
-        <h2 class="fw-bold mb-4">Ahmed Dev Hub</h2>
-        <p class="text-muted mb-4">
-          موقع Ahmed Dev Hub صُمم ليكون دليلك الشامل لتعلم البرمجة وتصميم
-          المواقع باستخدام HTML، CSS، وBootstrap. هدفنا هو تقديم محتوى عملي وسهل
-          لكل المستويات، من المبتدئين حتى المحترفين، مع التركيز على مشاريع
-          حقيقية لتكون جاهز لسوق العمل.
-        </p>
-        <!-- زر تجربة مجانية أو رابط -->
-        <a href="#levels" class="btn btn-primary">ابدأ التعلم الآن</a>
-      </div>
-    </section>
-    <!-- =========================
-     SECTION: مستويات التعلم
-     ========================= -->
-    <section id="levels" class="py-5">
-      <div class="container text-center">
-        <h2 class="fw-bold mb-5">مستويات التعلم</h2>
-        <!---(g-4 مسافات بين الأعمدة) (row عبارة عن صف)--->
-        <div class="row g-4">
-          <!-- مستوى مبتدئ -->
-          <div class="col-md-4">
-            <div class="card shadow h-100">
-              <div class="card-body">
-                <h5 class="fw-bold">مبتدئ</h5>
-                <p class="text-muted">من الصفر تماماً</p>
-
-                <!-- زر يفتح Modal -->
-                <!---(BootstrapJS) لمن تضغط يفتح نافذةومسؤال عن -->
-                <button
-                  class="btn btn-primary w-100"
-                  data-bs-toggle="modal"
-                  data-bs-target="#beginnerModal"
-                >
-                  عرض التفاصيل
-                </button>
-              </div>
-            </div>
-          </div>
-          <!-- مستوى متوسط -->
-          <div class="col-md-4">
-            <div class="card shadow h-100">
-              <div class="card-body">
-                <h5 class="fw-bold">متوسط</h5>
-                <p class="text-muted">تطبيق عملي</p>
-                <button
-                  class="btn btn-success w-100"
-                  data-bs-toggle="modal"
-                  data-bs-target="#mediumModal"
-                >
-                  عرض التفاصيل
-                </button>
-              </div>
-            </div>
-          </div>
-          <!-- مستوى متقدم -->
-          <div class="col-md-4">
-            <div class="card shadow h-100">
-              <div class="card-body">
-                <h5 class="fw-bold">متقدم</h5>
-                <p class="text-muted">مشاريع حقيقية</p>
-                <button
-                  class="btn btn-danger w-100"
-                  data-bs-toggle="modal"
-                  data-bs-target="#advancedModal"
-                >
-                  عرض التفاصيل
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- =========================
-     MODALS (شرح المستويات)
-     ========================= -->
-    <!-- مبتدئ -->
-    <div class="modal fade" id="beginnerModal">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">مستوى المبتدئ</h5>
-            <button class="btn-close" data-bs-dismiss="modal"></button>
-          </div>
-          <div class="modal-body">
-            نبدأ معك من:
-            <ul>
-              <li>HTML من الصفر</li>
-              <li>Bootstrap أساسيات</li>
-              <li>بناء صفحات بسيطة</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- متوسط -->
-    <div class="modal fade" id="mediumModal">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">المستوى المتوسط</h5>
-            <button class="btn-close" data-bs-dismiss="modal"></button>
-          </div>
-          <div class="modal-body">
-            في هذا المستوى:
-            <ul>
-              <li>تصميم متجاوب كامل</li>
-              <li>Grid و Components بعمق</li>
-              <li>تنظيم المشاريع</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- متقدم -->
-    <div class="modal fade" id="advancedModal">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">المستوى المتقدم</h5>
-            <button class="btn-close" data-bs-dismiss="modal"></button>
-          </div>
-          <div class="modal-body">
-            هنا نشتغل:
-            <ul>
-              <li>مشاريع كاملة</li>
-              <li>جاهزية لسوق العمل</li>
-              <li>أفضل الممارسات</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- =========================
-     SECTION: معرض الصور
-     ========================= -->
-    <section id="gallery" class="py-5 bg-light">
-      <div class="container text-center">
-        <h2 class="fw-bold mb-5">معرض الصور</h2>
-        <div class="row g-4">
-          <!-- صورة 1 -->
-          <div class="col-md-4">
-            <div class="card h-100 shadow">
-              <img
-                src="https://via.placeholder.com/350x200"
-                class="card-img-top"
-                alt="صورة توضيحية"
-              />
-              <div class="card-body">
-                <p class="card-text">صورة من مشاريعنا العملية</p>
-              </div>
-            </div>
-          </div>
-          <!-- صورة 2 -->
-          <div class="col-md-4">
-            <div class="card h-100 shadow">
-              <img
-                src="https://via.placeholder.com/350x200"
-                class="card-img-top"
-                alt="صورة توضيحية"
-              />
-              <div class="card-body">
-                <p class="card-text">تصميم متجاوب باستخدام Bootstrap</p>
-              </div>
-            </div>
-          </div>
-          <!-- صورة 3 -->
-          <div class="col-md-4">
-            <div class="card h-100 shadow">
-              <img
-                src="https://via.placeholder.com/350x200"
-                class="card-img-top"
-                alt="صورة توضيحية"
-              />
-              <div class="card-body">
-                <p class="card-text">نماذج مشاريع جاهزة</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- =========================
-     SECTION: فيديو
-     ========================= -->
-    <section id="video" class="py-5 bg-white">
-      <div class="container text-center">
-        <h2 class="fw-bold mb-4">فيديو تعليمي</h2>
-        <p class="text-muted mb-4">
-          شاهد هذا الفيديو لتعرف أكثر عن طريقة تعلم البرمجة معنا.
-        </p>
-        <!--- يحافظ على ابعاد الفديو--->
-        <div class="ratio ratio-16x9">
-          <!-- استبدل الرابط بالرابط الحقيقي لفيديوك -->
-          <iframe
-            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-            title="فيديو تعليمي"
-            allowfullscreen
-          ></iframe>
-        </div>
-      </div>
-    </section>
-
-<!-- =========================
-     SECTION: نموذج إدخال البيانات
-     ========================= -->
-<section id="order" class="py-5 bg-light">
-  <div class="container">
-
-    <!-- عنوان الفورم -->
-    <h2 class="text-center fw-bold mb-4">نموذج الطلب</h2>
-
-    <!-- الفورم -->
-    <!-- action: الصفحة التي ننتقل لها بعد الإرسال -->
-    <!-- method: GET (مؤقتاً – بدون باك اند) -->
-    <form action="thanks.html" method="get" class="mx-auto" style="max-width:600px;">
-
-      <!-- اسم الزبون -->
-      <div class="mb-3">
-        <label class="form-label">الاسم الكامل</label>
-        <input type="text" class="form-control" placeholder="اكتب اسمك" required>
-      </div>
-
-      <!-- البريد الإلكتروني -->
-      <div class="mb-3">
-        <label class="form-label">البريد الإلكتروني</label>
-        <input type="email" class="form-control" placeholder="example@email.com" required>
-      </div>
-
-      <!-- رقم الهاتف -->
-      <div class="mb-3">
-        <label class="form-label">رقم الهاتف</label>
-        <input type="tel" class="form-control" placeholder="09xxxxxxxx" required>
-      </div>
-
-      <!-- رسالة الزبون -->
-      <div class="mb-3">
-        <label class="form-label">رسالتك</label>
-        <textarea class="form-control" rows="4" placeholder="اكتب رسالتك هنا"></textarea>
-      </div>
-
-      <!-- زر الإرسال -->
-      <div class="text-center">
-        <button type="submit" class="btn btn-primary px-5">
-          إرسال البيانات
-        </button>
-      </div>
-
-    </form>
-
-  </div>
-</section>
-
-    
-    <!-- =========================
-     CONTACT (أيقونات تواصل)
-     ========================= -->
-    <section id="contact" class="py-5 bg-dark text-center">
-      <h2 class="text-white mb-4">تواصل معنا</h2>
-      <div class="d-flex justify-content-center gap-4 fs-1">
-        <!-- واتساب -->
-        <a
-          href="https://wa.me/249XXXXXXXXX"
-          class="text-success"
-          target="_blank"
-          data-bs-toggle="tooltip"
-          data-bs-title="تواصل معنا عبر واتساب"
-        >
-          <i class="bi bi-whatsapp"></i>
-        </a>
-
-        <!-- تلجرام -->
-        <a
-          href="https://t.me/USERNAME"
-          class="text-info"
-          target="_blank"
-          data-bs-toggle="tooltip"
-          data-bs-title="راسلنا على تلجرام"
-        >
-          <i class="bi bi-telegram"></i>
-        </a>
-        <!-- بريد -->
-        <a
-          href="mailto:example@email.com"
-          class="text-danger"
-          data-bs-toggle="tooltip"
-          data-bs-title="أرسل لنا بريد"
-        >
-          <i class="bi bi-envelope"></i>
-        </a>
-      </div>
-    </section>
-    <!-- =========================
-     TOAST (تنبيه ترحيبي)
-     ========================= -->
-    <div class="toast position-fixed bottom-0 end-0 m-4" id="welcomeToast">
-      <div class="toast-header">
-        <strong class="me-auto">Ahmed Dev Hub</strong>
-        <button class="btn-close" data-bs-dismiss="toast"></button>
-      </div>
-      <div class="toast-body">مرحباً بك 👋 جاهز تبدأ رحلة التعلم؟</div>
-    </div>
-    <!-- =========================
-     Bootstrap JS (ضروري)
-     ========================= -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-      /* تفعيل الـ Tooltips */
-      const tooltipTriggerList = document.querySelectorAll(
-        '[data-bs-toggle="tooltip"]'
-      );
-      tooltipTriggerList.forEach((el) => new bootstrap.Tooltip(el));
-      /* تشغيل Toast عند فتح الصفحة */
-      const toast = new bootstrap.Toast(
-        document.getElementById("welcomeToast")
-      );
-      toast.show();
-    </script>
-  </body>
-</html>
